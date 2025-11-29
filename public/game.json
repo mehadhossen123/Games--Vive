@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknown's Battle Ground: PUBG",
+    "coverPhoto": "https://i.ibb.co.com/mQrmbJ6/download.jpg",
+    "category": "FPS",
+    "downloadLink": "https://i.ibb.co.com/mQrmbJ6/download.jpg",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": 4.5,
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://i.ibb.co.com/1YQNh6GK/download.jpg",
+    "category": "Action FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Call of Duty: Mobile delivers console-quality graphics, thrilling multiplayer, and iconic maps and modes in the palm of your hand.",
+    "ratings": 4.7,
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Garena Free Fire",
+    "coverPhoto": "https://i.ibb.co.com/tT9WVvxC/Garena-Launches-First-Ever-Free-Fire-Esports-Tournament-in-Morocco-https-gamingfoodle-tech-garena-fr.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com/",
+    "description": "Free Fire is a mobile survival shooter game where 50 players parachute onto a remote island to fight for survival and victory.",
+    "ratings": 4.3,
+    "developer": "Garena"
+  },
+  {
+    "id": "4",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://i.ibb.co.com/xqRPJpHG/download-1.jpg",
+    "category": "Adventure RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "Genshin Impact is an open-world action RPG featuring elemental combat and exploration in a fantasy world called Teyvat.",
+    "ratings": 4.8,
+    "developer": "miHoYo"
+  },
+  {
+    "id": "5",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://i.pinimg.com/736x/2c/cb/0d/2ccb0dd1fc17b4e476915c5760b5333a.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "Build your village, train your army, and battle with millions of players in this epic strategy game.",
+    "ratings": 4.6,
+    "developer": "Supercell"
+  },
+  {
+    "id": "6",
+    "title": "Among Us",
+    "coverPhoto": "https://i.pinimg.com/1200x/27/ae/69/27ae691289ee6b358bdbfeff44e9bc5b.jpg",
+    "category": "Party / Mystery",
+    "downloadLink": "https://innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a social deduction game where crewmates work together while impostors try to sabotage the mission.",
+    "ratings": 4.4,
+    "developer": "Innersloth"
+  },
+  {
+    "id": "7",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://i.pinimg.com/1200x/36/b3/12/36b31238b2f7cdad9ed1fb593c4ad0b6.jpg",
+    "category": "Racing",
+    "downloadLink": "https://asphaltlegends.com/",
+    "description": "Asphalt 9: Legends brings high-speed racing with real cars, breathtaking tracks, and intense competition.",
+    "ratings": 4.5,
+    "developer": "Gameloft"
+  },
+  {
+    "id": "8",
+    "title": "Minecraft",
+    "coverPhoto": "https://i.pinimg.com/1200x/02/8d/b9/028db91f448f42890439403aeca89d5a.jpg",
+    "category": "Sandbox / Survival",
+    "downloadLink": "https://www.minecraft.net/en-us",
+    "description": "Minecraft lets players build, explore, and survive in a blocky, procedurally-generated 3D world.",
+    "ratings": 4.9,
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "9",
+    "title": "Valorant",
+    "coverPhoto": "https://i.pinimg.com/1200x/29/bc/1b/29bc1b0a474dc82a57685d02a56c9bdb.jpg",
+    "category": "Tactical Shooter",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant is a team-based tactical FPS that combines precise shooting with hero abilities for strategic gameplay.",
+    "ratings": 4.8,
+    "developer": "Riot Games"
+  }
+]

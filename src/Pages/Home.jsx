@@ -1,0 +1,39 @@
+import React, { use, useEffect, } from 'react';
+import Banner from '../Component/Banner';
+import Marquee from "react-fast-marquee";
+import PopularGames from '../Component/PopularGames';
+import { AuthContext } from '../Provider/AuthContext';
+import Loading from '../Component/Loading';
+import NewsLetter from '../Component/NewsLetter';
+
+const Home = () => {
+
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
+  const {loading}=use(AuthContext)
+
+  if(loading){
+    return <Loading></Loading>
+  }
+    return (
+      <div className="w-11/12 mx-auto gap-5">
+        <Marquee className='gap-5'>
+         <p className='font-bold text-2xl  lg:mt-1 mt-10 text-blue-700'> Welcome to GameHub — Explore, Play, and Support Indie Developers! 🚀</p>
+         <p className='font-bold text-2xl  lg:mt-1 mt-10 text-blue-700'> Welcome to GameHub — Explore, Play, and Support Indie Developers! 🚀</p>
+         <p className='font-bold text-2xl  lg:mt-1 mt-10 text-blue-700'> Welcome to GameHub — Explore, Play, and Support Indie Developers! 🚀</p>
+        </Marquee>
+        <div className='mt-8'>
+          <Banner></Banner>
+        </div>
+        <div className='lg:mt-1 mt-10'>
+          <PopularGames> </PopularGames>
+          <NewsLetter></NewsLetter>
+
+        </div>
+      </div>
+    );
+};
+
+export default Home;
