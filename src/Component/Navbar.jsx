@@ -1,10 +1,9 @@
 import React, { use } from "react";
-import { NavLink, useNavigate } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 
 import { AuthContext } from "../Provider/AuthContext";
 import { toast } from "react-toastify";
-import img from '../assets/trophy.png'
-
+import img from "../assets/trophy.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -34,7 +33,7 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/allGame"
-          className={({ isActive }) => (isActive ? "border-b-green-700" : "")}
+          className={({ isActive }) => (isActive ? "" : "")}
         >
           All games
         </NavLink>
@@ -54,7 +53,7 @@ const Navbar = () => {
       {user ? (
         <li>
           <button
-            className="bg-red-600 border rounded-3xl "
+            className="bg-red-400 border rounded-3xl border-none text-black "
             onClick={handleLogOut}
           >
             Logout
@@ -89,9 +88,9 @@ const Navbar = () => {
   );
 
   return (
-    <div className="">
+    <div className="sticky top-2  px-5 ">
       <div className="navbar shadow-sm  ">
-        <div className="navbar-start">
+        <div className="navbar-start  ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -132,21 +131,50 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
+        {/* Profile image is here  */}
         {
           <div className="navbar-end ">
             <div>
-              <img
-                onClick={() => navigate("/auth/profile")}
-                className="h-[40px] w-[40px] rounded-full"
-                src={
-                  user?.photoURL
-                    ? user?.photoURL
-                    : "https://cdn-icons-png.flaticon.com/512/149/149071.png"
-                }
-                alt="https://img.icons8.com/?size=96&id=13042&format=png"
-              />
+              <button
+                popoverTarget="popover-1"
+                style={{ anchorName: "--anchor-1" }}
+              >
+                <img
+                  className="h-[40px] w-[40px] rounded-full"
+                  src={
+                    user?.photoURL
+                      ? user?.photoURL
+                      : "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                  }
+                  alt=""
+                />
+              </button>
               <p>{user?.displayName}</p>
             </div>
+            {/* Here is a drop dow  */}
+            <>
+              <ul
+                className="dropdown menu w-52 rounded-box bg-base-100 shadow-sm"
+                popover="auto"
+                id="popover-1"
+                style={
+                  { positionAnchor: "--anchor-1" } /* as React.CSSProperties */
+                }
+              >
+                <li>
+                 <Link>My Profile</Link>
+                </li>
+                <li>
+                  <Link
+                    to={"/auth/profile"}
+                    className="text-black font-bold
+                  "
+                  >
+                    Update profile
+                  </Link>
+                </li>
+              </ul>
+            </>
           </div>
         }
       </div>
