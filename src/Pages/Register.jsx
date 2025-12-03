@@ -6,7 +6,9 @@ import { toast } from 'react-toastify';
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 import Loading from '../Component/Loading';
 import { motion, scale } from 'motion/react';
+import img from '../assets/trophy.png'
 motion
+import img1 from '../assets/coolbackgrounds-gradient-cool.png'
 
 const Register = () => {
 
@@ -66,21 +68,26 @@ if(!passReg.test(password)){
 
 
     return (
-      <section className=" bg-gradient-to-r from-purple-600 via-pink-500 to-red-400">
+      <section className=" ">
         <header>
           <Navbar></Navbar>
         </header>
 
-        <div className=" flex justify-center items-center min-h-screen ">
+        <div
+        style={{backgroundImage:`url(${img1})`}}
+         className=" flex justify-center items-center min-h-screen ">
           <motion.form
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             onSubmit={handleRegister}
-            className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 "
+            className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 "
           >
-            <p className=" text-transparent bg-clip-text text-center bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-3xl font ">
-              Please Register !
-            </p>
+            <div className="flex justify-center items-center">
+              <img className="w-[50px]" src={img} alt="" />
+              <p className=" text-transparent bg-clip-text text-center bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-3xl font ">
+                Create Your Account !
+              </p>
+            </div>
             {/*name  */}
             <label className="label">Name</label>
             <motion.input
@@ -153,11 +160,11 @@ if(!passReg.test(password)){
             <p className="text-red-700">{emialError}</p>
 
             <motion.button
-              whileHover={{ scale: 1.1 }} 
-              whileTap={{ scale: 0.95 }} 
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               type="submit"
-              className="bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-400 btn rounded-sm  mt-4"
+              className="bg-gradient-to-r from-purple-500 text-white via-pink-500 to-red-500 hover:from-pink-500 hover:to-purple-500 btn rounded-sm  mt-4"
             >
               Register
             </motion.button>

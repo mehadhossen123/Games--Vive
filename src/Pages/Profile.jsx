@@ -5,10 +5,11 @@ import { toast } from "react-toastify";
 import Loading from "../Component/Loading";
 import { useNavigate } from "react-router";
 import { motion } from "motion/react";
-motion
+import img from "../assets/coolbackgrounds-gradient-cool.png"
+
 
 const Profile = () => {
-  const { updateUser, setLoading, loading, setUser } = useContext(AuthContext);
+  const { updateUser, setLoading, loading, setUser,user } = useContext(AuthContext);
   const navigate = useNavigate();
 
   if (loading) {
@@ -50,24 +51,12 @@ const Profile = () => {
   };
 
   return (
-    <motion.div
-      initial={{
-        background: "linear-gradient(135deg, #00ff99, #00ccff)",
-        opacity: 0,
-      }}
-      whileInView={{
-        background: "linear-gradient(135deg, #ff0077, #ffcc00)",
-        opacity: 1,
-      }}
-      transition={{ duration: 1.2, ease: "easeInOut" }}
-    >
+    <div className="">
       <header>
         <Navbar />
       </header>
-      <motion.form
-        initial={{ opacity: 0, x: 400 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, edgeMode: "easier" }}
+      <form
+        style={{ backgroundImage: `url(${img})` }}
         onSubmit={handleUpdateProfile}
         className="flex justify-center items-center min-h-screen"
       >
@@ -78,7 +67,7 @@ const Profile = () => {
 
           <label className="label">Name</label>
           <input
-          required
+            required
             type="text"
             name="name"
             className="input"
@@ -87,7 +76,7 @@ const Profile = () => {
 
           <label className="label">Photo URL</label>
           <input
-          required
+            required
             type="text"
             name="photo"
             className="input"
@@ -95,16 +84,16 @@ const Profile = () => {
           />
 
           <motion.button
-           whileHover={{scale:1.1}}
-           whileFocus={{scale:0.90}}
+            whileHover={{ scale: 1.1 }}
+            whileFocus={{ scale: 0.9 }}
             type="submit"
             className="px-6 py-2 text-xl cursor-pointer font-bold text-white rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-pink-500 hover:to-purple-500 transition-all duration-300"
           >
             Update
           </motion.button>
         </div>
-      </motion.form>
-    </motion.div>
+      </form>
+    </div>
   );
 };
 

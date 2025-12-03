@@ -34,11 +34,13 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path:"/leaderBoard",
-        element:<PrivateRoute>
-          <LeaderBoard></LeaderBoard>
-        </PrivateRoute>
-      }
+        path: "/leaderBoard",
+        element: (
+          <PrivateRoute>
+            <LeaderBoard></LeaderBoard>
+          </PrivateRoute>
+        ),
+      },
     ],
   },
   {
@@ -55,12 +57,21 @@ export const router = createBrowserRouter([
       },
       {
         path: "/auth/Profile",
-        element: <Profile></Profile>,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
       },
       {
-        path:"/auth/forgetPassword",
-        element:<ResetPassword></ResetPassword>
-      }
+        path: "/auth/forgetPassword",
+        element: (
+          
+            <ResetPassword></ResetPassword>
+          
+        ),
+      },
     ],
   },
   {

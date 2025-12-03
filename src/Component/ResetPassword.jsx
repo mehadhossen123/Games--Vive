@@ -4,9 +4,13 @@ import { AuthContext } from '../Provider/AuthContext';
 import { useRef } from 'react';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router';
+import img1 from "../assets/coolbackgrounds-gradient-cool.png";
+import img2 from '../assets/trophy.png'
+import { motion } from 'motion/react';
+motion
 
 const ResetPassword = () => {
-  const { user, resetPassword,setLoading } = use(AuthContext);
+  const {  resetPassword,setLoading } = use(AuthContext);
   const emailRef=useRef(null)
   const navigate=useNavigate()
   //   handleresetpassword function here
@@ -30,26 +34,33 @@ const ResetPassword = () => {
         <Navbar></Navbar>
       </header>
 
-      <div className="flex justify-center items-center min-h-screen shadow-2xl">
+      <div
+        style={{ backgroundImage: `url(${img1})` }}
+        className="flex justify-center items-center min-h-screen shadow-2xl"
+      >
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-          <h2 className="fieldset-legend text-center text-2xl">
-            Reset your password
-          </h2>
-
+          <div className="flex items-center">
+            <img className="w-[50px] " src={img2} alt="" />
+            <h2 className="fieldset-legend text-center text-2xl">
+              Reset your password
+            </h2>
+          </div>
           <label className="label">Your email</label>
           <input
-           ref={emailRef}
+            ref={emailRef}
             type="email"
             className="input"
             placeholder="Enter your email"
           />
-
-          <button
-            onClick={handleResetPassword}
-            className="btn btn-neutral mt-4"
+          <motion.button
+             onclick={handleResetPassword}
+            whileHover={{ scale: 1.1 }}
+            whileFocus={{ scale: 0.9 }}
+            type="submit"
+            className="px-6 py-2 text-xl cursor-pointer font-bold text-white rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-pink-500 hover:to-purple-500 transition-all duration-300"
           >
-            Reset{" "}
-          </button>
+            Update
+          </motion.button>
         </fieldset>
       </div>
     </div>

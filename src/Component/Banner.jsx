@@ -6,7 +6,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 const Banner = () => {
   return (
-    <div className="rounded-2xl overflow-hidden shadow-lg">
+    <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
@@ -23,7 +23,7 @@ const Banner = () => {
               className="w-full h-[500px] object-cover"
             />
             <button className="bg-amber-400 btn absolute top-[400px] font-bold text-3xl left-[100px] text-blue-700">
-              Play now!
+            
             </button>
           </div>
         </SwiperSlide>
@@ -36,7 +36,7 @@ const Banner = () => {
               className="w-full h-[500px] object-cover"
             />
             <button className="bg-amber-400 btn absolute top-[400px] font-bold text-3xl left-[100px] text-blue-700">
-              Play now!
+             
             </button>
           </div>
         </SwiperSlide>
@@ -49,7 +49,7 @@ const Banner = () => {
               className="w-full h-[500px] object-cover"
             />
             <button className="bg-amber-400 btn absolute top-[400px] font-bold text-3xl left-[100px] text-blue-700">
-              Play now!
+           
             </button>
           </div>
         </SwiperSlide>
