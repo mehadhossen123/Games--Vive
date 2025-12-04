@@ -20,7 +20,7 @@ const AllGame = () => {
 
     return (
       <div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 w-11/12  mx-auto my-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 my-10">
           {game?.map((singleGame) => (
             <div
               key={singleGame.id}

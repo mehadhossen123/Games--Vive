@@ -88,7 +88,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="sticky top-2  px-5 ">
+    <div className="">
       <div className="navbar shadow-sm  ">
         <div className="navbar-start  ">
           <div className="dropdown">
@@ -140,7 +140,7 @@ const Navbar = () => {
                 style={{ anchorName: "--anchor-1" }}
               >
                 <img
-                  className="h-[40px] w-[40px] rounded-full"
+                  className="h-[40px] w-[40px] rounded-full cursor-pointer "
                   src={
                     user?.photoURL
                       ? user?.photoURL

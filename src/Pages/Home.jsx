@@ -18,7 +18,7 @@ const Home = () => {
     return <Loading></Loading>
   }
     return (
-      <div className="w-11/12 mx-auto gap-5">
+      <div className=" gap-5">
         <Marquee
          
         >
