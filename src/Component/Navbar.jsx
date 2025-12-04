@@ -1,12 +1,12 @@
 import React, { use } from "react";
-import { Link, NavLink, useNavigate } from "react-router";
+import { Link, NavLink } from "react-router";
 
 import { AuthContext } from "../Provider/AuthContext";
 import { toast } from "react-toastify";
 import img from "../assets/trophy.png";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+
   const { user, sigOut } = use(AuthContext);
   const handleLogOut = () => {
     sigOut()
@@ -162,7 +162,7 @@ const Navbar = () => {
                 }
               >
                 <li>
-                 <Link>My Profile</Link>
+                 <Link to={"/auth/my-profile"} className="font-bold">My Profile</Link>
                 </li>
                 <li>
                   <Link

@@ -5,12 +5,13 @@ import AllGame from "../Pages/AllGame";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import AuthLayout from "../Layout/AuthLayout";
-import Profile from "../Pages/Profile";
+import Profile from "../Pages/UpdateProfile";
 import Details from "../Component/Details";
 import PrivateRoute from "../privateroute/PrivateRoute";
 import ResetPassword from "../Component/ResetPassword";
 import Error from "../Component/Error";
 import LeaderBoard from "../Pages/LeaderBoard";
+import MyProfile from "../Pages/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +51,11 @@ export const router = createBrowserRouter([
       {
         path: "/auth/login",
         element: <Login></Login>,
+      },
+      {
+        path:"/auth/my-profile",
+        element:<MyProfile></MyProfile>
+
       },
       {
         path: "/auth/register",

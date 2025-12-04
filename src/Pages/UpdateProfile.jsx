@@ -9,7 +9,7 @@ import img from "../assets/coolbackgrounds-gradient-cool.png"
 
 
 const Profile = () => {
-  const { updateUser, setLoading, loading, setUser,user } = useContext(AuthContext);
+  const { updateUser, setLoading, loading, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
   if (loading) {
