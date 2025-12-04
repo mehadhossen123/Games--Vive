@@ -10,6 +10,7 @@ const Details = () => {
     const {id}=useParams()
     const { game } = use(AuthContext);
     const findGame=game?.find(games=>games.id==id)
+    console.log(findGame)
    
     const navigate=useNavigate()
     // console.log(findGame);
@@ -51,19 +52,30 @@ const Details = () => {
 
             {/* Download / Play Button */}
             <div className="mt-6">
-              <a
+              {/* <a
                 href={findGame?.downloadLink}
                 target="_blank"
                 className="inline-block w-full text-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-lg hover:from-purple-600 hover:to-indigo-600 transition-all duration-300"
               >
                 <FaCloudDownloadAlt className='relative top-7 left-40 text-3xl'/>
                 Download / Play
-              </a>
+              </a> */}
+              <button
+                onClick={() => window.open(findGame?.downloadLink)}
+                className="w-full px-6 py-3 rounded-lg text-white font-semibold 
+              bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-cyan-400
+               hover:from-purple-500 hover:to-pink-500 
+               shadow-lg hover:shadow-2xl transition-all duration-300 
+               flex items-center justify-center gap-2"
+              >
+                <FaCloudDownloadAlt className="text-2xl" />
+                Download/play
+              </button>
               <div className="flex justify-center mt-4">
                 <button
                   onClick={() => navigate(-1)}
                   className="w-full px-6 py-3 rounded-lg text-white font-semibold 
-               bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
+             bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-cyan-400
                hover:from-purple-500 hover:to-pink-500 
                shadow-lg hover:shadow-2xl transition-all duration-300 
                flex items-center justify-center gap-2"

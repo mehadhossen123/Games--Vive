@@ -5,6 +5,8 @@ import { CiStar } from 'react-icons/ci';
 import { Navigate, useNavigate } from 'react-router';
 import { TbListDetails } from "react-icons/tb";
 
+
+
 const AllGame = () => {
   useEffect(() => {
     document.title = "allGame";
@@ -15,12 +17,16 @@ const AllGame = () => {
 
 
   
-  const { game, setCurrentGame } = use(AuthContext);
+  const { game } = use(AuthContext);
   const navigate=useNavigate();
 
     return (
       <div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 my-10">
+        
+        <p className="text-2xl text-center mt-5 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+          Explore All Available Games
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-6 my-10">
           {game?.map((singleGame) => (
             <div
               key={singleGame.id}
@@ -51,17 +57,13 @@ const AllGame = () => {
                     <CiStar className="text-yellow-400 text-xl" />
                   </div>
 
-                  <button className="px-4 py-2 rounded-lg text-white font-semibold bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-600 hover:to-indigo-500 transition-all duration-300">
-                    Play Now
-                  </button>
+                 {/* button */}
                 </div>
               </div>
               <div className="flex justify-center mt-3">
                 <button
                   onClick={() => {
-                  
                     navigate(`/allGame/${singleGame.id}`);
-                   
                   }}
                   className="flex items-center justify-center gap-2 px-5 w-full mx-3 py-2 rounded-lg text-white font-semibold 
              bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 

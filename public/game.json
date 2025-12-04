@@ -1,13 +1,14 @@
 [
   {
     "id": "1",
-    "title": "Player Unknown's Battle Ground: PUBG",
+    "title": " Battle Ground: PUBG",
     "coverPhoto": "https://i.ibb.co.com/mQrmbJ6/download.jpg",
     "category": "FPS",
     "downloadLink": "https://i.ibb.co.com/mQrmbJ6/download.jpg",
     "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
     "ratings": 4.5,
     "developer": "Krafton"
+  
   },
   {
     "id": "2",

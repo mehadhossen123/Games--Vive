@@ -88,8 +88,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="">
-      <div className="navbar shadow-sm  ">
+    <div className="  sticky z-10 top-3  ">
+      <div className="navbar ">
         <div className="navbar-start  ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -123,7 +123,7 @@ const Navbar = () => {
               src={img}
               alt=""
             />
-            <h1 class="text-4xl  font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+            <h1 className="text-4xl  font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
               GameVerse
             </h1>
           </div>
@@ -162,7 +162,9 @@ const Navbar = () => {
                 }
               >
                 <li>
-                 <Link to={"/auth/my-profile"} className="font-bold">My Profile</Link>
+                  <Link to={"/auth/my-profile"} className="font-bold">
+                    My Profile
+                  </Link>
                 </li>
                 <li>
                   <Link
