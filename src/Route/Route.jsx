@@ -12,6 +12,7 @@ import ResetPassword from "../Component/ResetPassword";
 import Error from "../Component/Error";
 import LeaderBoard from "../Pages/LeaderBoard";
 import MyProfile from "../Pages/MyProfile";
+import AboutUs from "../Pages/AboutUs";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path:"/about-us",
+        element:<AboutUs></AboutUs>
+      }
     ],
   },
   {

@@ -84,6 +84,16 @@ const Navbar = () => {
           </li>
         </>
       )}
+      <li>
+        <NavLink
+          to="/about-us"
+          className={({ isActive }) =>
+            isActive ? " bg-green-500 rounded-3xl px-3 text-white" : ""
+          }
+        >
+          About us
+        </NavLink>
+      </li>
     </>
   );
 
