@@ -89,5 +89,35 @@
     "description": "Valorant is a team-based tactical FPS that combines precise shooting with hero abilities for strategic gameplay.",
     "ratings": 4.8,
     "developer": "Riot Games"
+  },
+  {
+    "id": "9",
+    "title": "Tetris",
+    "coverPhoto": "https://t3.ftcdn.net/jpg/03/24/08/20/360_F_324082017_07zHI5vADcE9XxfIKpdmnJOOrj6HcIRS.jpg",
+    "category": "Tactical Shooter",
+    "downloadLink": "https://play.tetris.com/",
+    "description": "A timeless puzzle game where falling geometric shapes must be arranged to form complete lines before the stack reaches the top.",
+    "ratings": 4.8,
+    "developer": "Riot Games"
+  },
+  {
+    "id": "9",
+    "title": "The Legend of Zelda",
+    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrfUjElEGEf8FuKN6op_1CbZcWgpaTrQgKgw&s",
+    "category": "Tactical Shooter",
+    "downloadLink": "https://zelda.nintendo.com/",
+    "description": "A classic adventure game where the hero Link explores dungeons, solves puzzles, and battles enemies to save Princess Zelda.",
+    "ratings": 4.8,
+    "developer": "Riot Games"
+  },
+  {
+    "id": "9",
+    "title": "Valorant",
+    "coverPhoto": "https://i.ibb.co.com/DHkqRfz5/Choosing-Minecraft-Over-Disney.jpg",
+    "category": "Tactical Shooter",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant is a team-based tactical FPS that combines precise shooting with hero abilities for strategic gameplay.",
+    "ratings": 4.8,
+    "developer": "Riot Games"
   }
 ]
