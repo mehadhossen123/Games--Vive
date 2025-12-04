@@ -19,7 +19,7 @@ const MyProfile = () => {
     "https://cdn-icons-png.flaticon.com/512/149/149071.png";
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 min-h-screen mt-20">
       <header>
         <Navbar />
       </header>
