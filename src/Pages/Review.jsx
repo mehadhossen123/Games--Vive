@@ -25,7 +25,7 @@ const Review = () => {
         <div>
           <Marquee pauseOnHover={true}>
             {reviews.map((re) => (
-              <div class=" rounded-lg shadow-lg mx-5 p-4 max-w-md bg-gray-200  my-4">
+              <div class=" rounded-lg shadow-lg mx-5 p-4 max-w-md bg-gray-200  my-10">
                 <div class="text-teal-600 text-4xl mb-4">“</div>
 
                 <p class="text-gray-700 leading-relaxed mb-4 font-bold">

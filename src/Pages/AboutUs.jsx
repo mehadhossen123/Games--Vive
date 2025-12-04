@@ -18,7 +18,7 @@ const AboutUs = () => {
       style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}
     >
       {/* Hero */}
-      <p className="text-3xl md:text-4xl text-center font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+      <p className="text-3xl md:text-4xl text-center font-bold mb-10 text-transparent bg-clip-text mt-24 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
         Thank You for Visiting Us
       </p>
 
