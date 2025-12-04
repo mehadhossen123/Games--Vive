@@ -5,6 +5,7 @@ import PopularGames from '../Component/PopularGames';
 import { AuthContext } from '../Provider/AuthContext';
 import Loading from '../Component/Loading';
 import NewsLetter from '../Component/NewsLetter';
+import Review from './Review';
 
 const Home = () => {
 
@@ -18,7 +19,7 @@ const Home = () => {
     return <Loading></Loading>
   }
     return (
-      <div className=" gap-5">
+      <div className="mt-24 gap-5">
         <Marquee
          
         >
@@ -41,6 +42,9 @@ const Home = () => {
         <div className="lg:mt-1 mt-10">
           <PopularGames> </PopularGames>
           <NewsLetter></NewsLetter>
+        </div>
+        <div>
+          <Review></Review>
         </div>
       </div>
     );

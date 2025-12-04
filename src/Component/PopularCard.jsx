@@ -8,7 +8,7 @@ const PopularCard = ({ data }) => {
     return <p>Loading popular games...</p>;
 
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  mx-auto my-10">
+    <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6  mx-auto my-10">
       {data?.map((singleGame) => (
         <div
           key={singleGame.id}
@@ -39,7 +39,7 @@ const PopularCard = ({ data }) => {
                 <CiStar className="text-yellow-400 text-xl" />
               </div>
 
-              <button className="px-4 py-2 rounded-lg text-white font-semibold bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-600 hover:to-indigo-500 transition-all duration-300">
+              <button onClick={()=>window.open(singleGame?.downloadLink)} className="px-4 py-1 rounded-lg text-white font-semibold bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-600 hover:to-indigo-500 transition-all duration-300">
                 Play Now
               </button>
             </div>

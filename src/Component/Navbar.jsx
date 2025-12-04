@@ -98,7 +98,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="  sticky z-10 top-3  ">
+    <div className="  fixed w-full z-10 top-0 bg-white">
       <div className="navbar ">
         <div className="navbar-start  ">
           <div className="dropdown">

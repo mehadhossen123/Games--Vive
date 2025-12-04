@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gv001",
+    "user_email": "alice.johnson@example.com",
+    "userName": "Alice Johnson",
+    "ratings": 5.0,
+    "review": "GameVerse is amazing! The games load instantly and are super fun to play.",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/21.jpg",
+    "date": "2025-01-10T14:30:00.000Z"
+  },
+  {
+    "id": "gv002",
+    "user_email": "michael.smith@example.com",
+    "userName": "Michael Smith",
+    "ratings": 4.2,
+    "review": "I love how easy it is to browse and play games without downloading anything.",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/45.jpg",
+    "date": "2025-02-05T10:15:00.000Z"
+  },
+  {
+    "id": "gv003",
+    "user_email": "sofia.lee@example.com",
+    "userName": "Sofia Lee",
+    "ratings": 5.0,
+    "review": "Perfect for short gaming sessions. The interface is clean and responsive.",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/32.jpg",
+    "date": "2025-02-20T08:50:00.000Z"
+  },
+  {
+    "id": "gv004",
+    "user_email": "daniel.kim@example.com",
+    "userName": "Daniel Kim",
+    "ratings": 4.5,
+    "review": "Lots of variety and new games keep appearing. Highly recommend it!",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/10.jpg",
+    "date": "2025-03-01T09:10:00.000Z"
+  },
+  {
+    "id": "gv005",
+    "user_email": "emma.brown@example.com",
+    "userName": "Emma Brown",
+    "ratings": 5.0,
+    "review": "The mobile experience is excellent. I can play anywhere easily.",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/50.jpg",
+    "date": "2025-03-15T12:45:00.000Z"
+  },
+  {
+    "id": "gv006",
+    "user_email": "james.wilson@example.com",
+    "userName": "James Wilson",
+    "ratings": 4.8,
+    "review": "Fast, fun, and lightweight games. This site is exactly what I needed!",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/28.jpg",
+    "date": "2025-04-02T16:00:00.000Z"
+  },
+  {
+    "id": "gv007",
+    "user_email": "olivia.davis@example.com",
+    "userName": "Olivia Davis",
+    "ratings": 4.3,
+    "review": "Very user-friendly interface and safe for family-friendly gaming.",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/41.jpg",
+    "date": "2025-04-10T18:20:00.000Z"
+  },
+  {
+    "id": "gv008",
+    "user_email": "liam.martinez@example.com",
+    "userName": "Liam Martinez",
+    "ratings": 5.0,
+    "review": "GameVerse has a fantastic collection. The new updates keep it exciting!",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/33.jpg",
+    "date": "2025-04-20T07:30:00.000Z"
+  }
+]

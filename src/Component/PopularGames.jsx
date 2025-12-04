@@ -1,19 +1,20 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthContext";
 import PopularCard from "./PopularCard";
+import Loading from "./Loading";
 
 const PopularGames = () => {
   const { game } = useContext(AuthContext);
 
  
   if (!Array.isArray(game) || game.length === 0) {
-    return <p className="text-center mt-5">Loading games...</p>;
+    return <Loading></Loading>
   }
 
   
   const sortedData = [...game].sort(
     (a, b) => parseFloat(b.ratings) - parseFloat(a.ratings)
-  ).slice(0,3)
+  ).slice(0,8)
 
   return (
     <>

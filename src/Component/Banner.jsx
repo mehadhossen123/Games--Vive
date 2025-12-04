@@ -6,7 +6,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 const Banner = () => {
   return (
-    <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+    <div className="rounded-2xl overflow-hidden shadow-lg mt-12 h-[400px]">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
